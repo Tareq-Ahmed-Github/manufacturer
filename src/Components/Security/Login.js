@@ -90,7 +90,7 @@ const Login = () => {
                         <input className='cursor-pointer border font-semibold text-2xl rounded-lg px-20 p-4 bg-yellow-400 hover:bg-yellow-500' type="submit" value="Login" />
                         {signInError}
                     </form>
-                    <p className='text-xl font-bold text-sky-700 py-0 hover:text-2xl mt-5'><small><Link className='text-primary' to="/register">Create A New Account</Link></small></p>
+                    <p className='text-xl font-bold text-sky-700 py-0 hover:text-2xl mt-5'><small><Link className='text-primary' to="/signup">Create A New Account</Link></small></p>
                     <div className="font-semibold text-slate-400">Or</div>
                     <button
                         onClick={() => signInWithGoogle()}
