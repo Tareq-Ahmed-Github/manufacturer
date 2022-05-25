@@ -4,7 +4,7 @@ import Banner from './Banner';
 const Home = () => {
     return (
         <div>
-            <h2>helllo</h2>
+            <h2 className='p-10 bg-emerald-300'>helllo</h2>
             <Banner></Banner>
         </div>
     );
