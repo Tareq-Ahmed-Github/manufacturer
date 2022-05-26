@@ -28,7 +28,7 @@ const Reviews = () => {
                 <img className='lg:h-16 mt-8 h-0' src="https://media.istockphoto.com/vectors/search-icon-on-a-report-board-audit-review-check-list-icon-vector-id1165492465?k=20&m=1165492465&s=170667a&w=0&h=FEl0wBCViorMvkAd-SeIcK4ogdzufG7OquwAeba_ygk=" alt="" />
                 <h1 className='text-primary text-center text-3xl lg:text-5xl mt-10 mb-5 uppercase'>Happy Customers Said</h1>
             </div>
-            <div className='grid m-5 lg:grid-cols-3 gap-6 items-center justify-center'>
+            <div className='flex m-5 items-center justify-center justify-around'>
                 {reviews.map(review => <Review
                     key={review?._id}
                     review={review}

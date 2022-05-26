@@ -1,0 +1,47 @@
+[
+    {
+        "_id": "62726c2085f4ef1f0c7d64eb",
+        "picture": "https://i.ibb.co/609WRCH/1559334047-feedback-sports-chain-keeper-1559334035.jpg",
+        "name": "CNC machined Chain Keeper",
+        "price": "$49.00",
+        "minorder": "10",
+        "description": "Holds the chain for easier cleaning.",
+        "available": "1000"
+    },
+    {
+        "_id": "62726c2085f4ef1f0c7d64eb",
+        "picture": "https://i.ibb.co/SXsnzNW/1559333926-epauto-torque-wrench-1559333915.jpg",
+        "name": "1/4 Inch Drive Torque wrench",
+        "price": "$29.97",
+        "minorder": "10",
+        "description": "Longer lasting parts and more safety.",
+        "available": "1000"
+    },
+    {
+        "_id": "62726c2085f4ef1f0c7d64eb",
+        "picture": "https://i.ibb.co/L6vq6Ls/1559333866-finish-line-5-piece-pro-brush-set-1559333844.jpg",
+        "name": "Five Piece Pro Brush Set",
+        "price": "$20",
+        "minorder": "10",
+        "description": "Reach into every crevice.",
+        "available": "1000"
+    },
+    {
+        "_id": "62726c2085f4ef1f0c7d64eb",
+        "picture": "https://i.ibb.co/F5pD1zK/1559335719-bontrager-dual-charger-floor-pump-1559335696.jpg",
+        "name": "Dual Charger Floor Pump",
+        "price": "$73.99",
+        "minorder": "10",
+        "description": "Dual volume for fast inflation.",
+        "available": "1000"
+    },
+    {
+        "_id": "62726c2085f4ef1f0c7d64eb",
+        "picture": "https://i.ibb.co/jw9cNhk/1559335985-park-hxs-1-2-002-1559335970.jpg",
+        "name": "HXS-1.2 Professional Hex Wrench Set",
+        "price": "$23.99",
+        "minorder": "10",
+        "description": "The most essential bike tool.",
+        "available": "1000"
+    }
+]
