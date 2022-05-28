@@ -1,6 +1,6 @@
-import Tools from "../Home/Tools";
+import ToolsAll from './../Private/ToolsAll';
 
 export const privateRoutes = [
 
-  { path: "/toolsall", name: "Tools", Component: Tools },
+  { path: "/toolsall", name: "Tools", Component: ToolsAll },
 ];

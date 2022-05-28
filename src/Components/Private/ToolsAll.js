@@ -12,7 +12,6 @@ const ToolsAll = () => {
                     tool={tool}
                 ></Tool>)}
             </div>
-            <button className="lg:my-12 font-bold bg-black py-2 border rounded px-5 hover:bg-slate-700 hover:px-6 hover:text-white text-orange-100">More TOOls</button>
         </div>
     );
 };
