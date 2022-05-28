@@ -2,7 +2,6 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Login from './Components/Security/Login';
-import Header from './Components/Shared/Header';
 import Signup from './Components/Security/Signup';
 import Banner from './Components/Home/Banner';
 import Footer from './Components/Shared/Footer';
@@ -17,12 +16,16 @@ import { publicRoute } from './Components/Routes/PublicRoutes';
 import PrivateRoute from './Components/Authentication/PrivateRoute';
 import { privateRoutes } from './Components/Routes/PrivateRoutes';
 import AdminRoute from './Components/Authentication/AdminRoute';
+import Navbar from './Components/Shared/Navbar';
 import Dashboard from './Components/Private/Dashboard/Dashboard';
+import AddReview from './Components/Private/Dashboard/AddReview';
+import MyProfile from './Components/Private/Dashboard/MyProfile';
+import MyOrders from './Components/Private/Dashboard/MyOrders';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <Navbar></Navbar>
       {/* <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/' element={<Banner></Banner>}></Route>
@@ -46,8 +49,9 @@ function App() {
         </Route>
         <Route element={<AdminRoute />}>
           <Route path='/dashboard' element={<Dashboard />}>
-            <Route path='add-admin' element={<AddAdmin />} />
-            <Route path='add-service' element={<AddService />} />
+            <Route path='addreview' element={<AddReview />} />
+            <Route path='myprofile' element={<MyProfile />} />
+            <Route path='myorders' element={<MyOrders />} />
           </Route>
         </Route>
       </Routes>
