@@ -13,12 +13,17 @@ import Info from './Components/Home/Info';
 import ToolsAll from './Components/Private/ToolsAll';
 import RequireAuth from './Components/Security/RequireAuth';
 import BusinessSummary from './Components/Home/Bussiness';
+import { publicRoute } from './Components/Routes/PublicRoutes';
+import PrivateRoute from './Components/Authentication/PrivateRoute';
+import { privateRoutes } from './Components/Routes/PrivateRoutes';
+import AdminRoute from './Components/Authentication/AdminRoute';
+import Dashboard from './Components/Private/Dashboard/Dashboard';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/' element={<Banner></Banner>}></Route>
         <Route path='/' element={<Tools></Tools>}></Route>
@@ -29,6 +34,22 @@ function App() {
         <Route path='/' element={<Info></Info>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
+      </Routes> */}
+      <Routes>
+        {publicRoute.map(({ path, Component }, index) => (
+          <Route key={index} path={path} element={<Component />} />
+        ))}
+        <Route element={<PrivateRoute />}>
+          {privateRoutes.map(({ path, Component }, index) => (
+            <Route key={index} path={path} element={<Component />} />
+          ))}
+        </Route>
+        <Route element={<AdminRoute />}>
+          <Route path='/dashboard' element={<Dashboard />}>
+            <Route path='add-admin' element={<AddAdmin />} />
+            <Route path='add-service' element={<AddService />} />
+          </Route>
+        </Route>
       </Routes>
       <Footer></Footer>
     </div>
