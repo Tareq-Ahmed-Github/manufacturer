@@ -1,13 +1,13 @@
 import React from 'react';
 import Tool from './Tool';
-import useTools from './../Hooks/UseTools';
+import useTools from '../Hooks/useTools';
 
 const Tools = () => {
     const [tools] = useTools();
     return (
-        <div className='flex items-center flex-col my-12'>
+        <div className='flex-col flex items-center my-12'>
             <h1 className='text-primary text-5xl my-10 text-center'>BEST SELLING TOOLS</h1>
-            <div className='grid grid-cols-3 gap-3 mb-5'>               
+            <div className='flex-col lg:flex gap-3'>               
                 {tools?.slice(0, 3)?.map(tool => <Tool key={tool._id}
                     tool={tool}
                 ></Tool>)}

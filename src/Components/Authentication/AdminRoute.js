@@ -1,9 +1,9 @@
 import React from "react";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import UseAdmin from './../Hooks/UseAdmin';
+import useAdmin from "../Hooks/useAdmin";
 const AdminRoute = () => {
   const location = useLocation();
-  const [admin] = UseAdmin();
+  const [admin] = useAdmin();
 
   if (!admin) {
     return <Navigate to='/' replace />;

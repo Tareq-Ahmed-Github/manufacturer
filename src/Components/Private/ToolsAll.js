@@ -1,6 +1,6 @@
 import React from 'react';
 import Tool from '../Home/Tool';
-import useTools from '../Hooks/UseTools';
+import useTools from '../Hooks/useTools';
 
 const ToolsAll = () => {
     const [tools] = useTools();

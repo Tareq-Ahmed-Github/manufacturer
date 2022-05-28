@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import useAdmin from "../hooks/useAdmin";
+import useAdmin from "../Hooks/useAdmin";
 import { useLocation } from "react-router-dom";
 
 const Navbar = ({ children }) => {
@@ -11,7 +11,7 @@ const Navbar = ({ children }) => {
   const [admin] = useAdmin();
 
   return (
-    <div class='drawer  drawer-end' data-theme={dark ? "dark" : "light"}>
+    <div class='' data-theme={dark ? "dark" : "light"}>
       <input id='my-drawer-3' type='checkbox' class='drawer-toggle' />
       <div class='drawer-content flex flex-col'>
         <div class='w-full navbar bg-base-100 fixed top-0 z-50 lg:px-20'>
@@ -113,54 +113,6 @@ const Navbar = ({ children }) => {
           </div>
         </div>
         {children}
-      </div>
-      <div class='drawer-side'>
-        <label for='my-drawer-3' class='drawer-overlay'></label>
-        <ul class='menu p-4 overflow-y-auto w-80 bg-base-100'>
-          <li>
-            <NavLink to='/' className='rounded-lg'>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/about' className='rounded-lg'>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/toolsall' className='rounded-lg'>
-              Tools
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/contact' className='rounded-lg'>
-              Contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to='/login' className='rounded-lg'>
-              Login
-            </NavLink>
-          </li>
-          <div
-            tabindex='0'
-            class='collapse collapse-arrow border border-base-300 bg-base-100 rounded-box'
-          >
-            <div class='collapse-title text-xl font-medium'>Book Now</div>
-            <div class='collapse-content'>
-              <li>
-                <NavLink to='/contact' className='rounded-lg'>
-                  Quick book
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to='/login' className='rounded-lg'>
-                  Pre book
-                </NavLink>
-              </li>
-            </div>
-          </div>
-        </ul>
       </div>
     </div>
   );
