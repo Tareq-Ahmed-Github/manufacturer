@@ -22,6 +22,9 @@ const DashboardSidebar = ({ children }) => {
             <NavLink to='/dashboard/myprofile'>My Profile</NavLink>
           </li>
           <li>
+            <NavLink to='/dashboard/users'>Users</NavLink>
+          </li>
+          <li>
             <NavLink to='/dashboard/managetools'>Manage Tools</NavLink>
           </li>
           <li className='mx-3 lg:mt-3 hover:text-yellow-700 font-bold bg-emerald-300 rounded-lg my-3'>
