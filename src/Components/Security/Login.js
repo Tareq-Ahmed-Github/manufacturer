@@ -37,7 +37,7 @@ const Login = () => {
     return (
         <div className=''>
             <div className="">
-                <div className=" grid grid-cols-1 border w-80 mx-auto mt-10">
+                <div className=" grid grid-cols-1 border w-80 mx-auto my-40">
                     <h2 className="text-3xl font-bold my-5">Login</h2>
 
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -87,7 +87,7 @@ const Login = () => {
                         </div>
 
 
-                        <input className='cursor-pointer border font-semibold text-2xl rounded-lg px-20 p-4 bg-yellow-400 hover:bg-yellow-500' type="submit" value="Login" />
+                        <input className='cursor-pointer border font-semibold text-2xl rounded-lg px-20 p-4 bg-primary hover:bg-yellow-500 hover:text-black' type="submit" value="Login" />
                         {signInError}
                     </form>
                     <p className='text-xl font-bold text-sky-700 py-0 hover:text-2xl mt-5'><small><Link className='text-primary' to="/signup">Create A New Account</Link></small></p>
