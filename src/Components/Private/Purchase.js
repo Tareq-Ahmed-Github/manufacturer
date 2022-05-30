@@ -9,7 +9,7 @@ const Purchase = () => {
     const { toolId } = useParams()
     const [tool, setTool] = useState({});
     useEffect(() => {
-        const url = `https://localhost:5000/tools/${toolId}`
+        const url = `https://bike-hunt.herokuapp.com/tools/${toolId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setTool(data))
@@ -32,7 +32,7 @@ const Purchase = () => {
         console.log(Quantity)
         let updateTool = { Quantity };
         // send data to the server
-        const urli = `https://localhost:5000/tools/${toolId}`;
+        const urli = `https://bike-hunt.herokuapp.com/tools/${toolId}`;
         console.log(urli)
         fetch(urli, {
             method: 'PUT',
@@ -47,7 +47,7 @@ const Purchase = () => {
                 setTool(data)
                 reset()
             })
-        const url = `https://localhost:5000/tools/orders`;
+        const url = `https://bike-hunt.herokuapp.com/tools/orders`;
         fetch(url, {
             method: 'POST',
             headers: {

@@ -10,7 +10,7 @@ const MyOrder = () => {
     const navigate = useNavigate();
     useEffect(() => {
         if (user) {
-            fetch(`https://localhost:5000/order?customer=${user.email}`, {
+            fetch(`https://bike-hunt.herokuapp.com/order?customer=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -40,7 +40,7 @@ const MyOrder = () => {
     const handleDelete = id => {
         const confirm = window.confirm('Are you sure?');
         if (confirm) {
-            const url = `https://localhost:5000/orders/${id}`
+            const url = `https://bike-hunt.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
