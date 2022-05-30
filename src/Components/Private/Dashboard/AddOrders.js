@@ -10,7 +10,7 @@ const AddOrders = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/addtools", data).then((res) => {
+    axios.post("https://bike-hunt.herokuapp.com/addtools", data).then((res) => {
       if (res.data?.upsertedCount === 1) {
         toast.success("Productd is added");
         console.log(res.data);

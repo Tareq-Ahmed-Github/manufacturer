@@ -7,7 +7,7 @@ const ManageTools = () => {
     const handleDelete = id => {
         const confirm = window.confirm('Are you sure?');
         if (confirm) {
-            const url = `http://localhost:5000/tools/${id}`
+            const url = `https://bike-hunt.herokuapp.com/tools/${id}`
             fetch(url, {
                 meh2od: 'DELETE'
             })
@@ -21,12 +21,12 @@ const ManageTools = () => {
     return (
         <div class="">
             <div class="w-full border bg-green-700 rounded-lg mt-80">
-                    <div className='row fw-bold grid grid-cols-4'>
-                        <h2 className='col-3 border border-black py-4 rounded-t-lg'>Photo</h2>
-                        <h2 className='col-3 border border-black py-4 rounded-t-lg'>Quantity</h2>
-                        <h2 className='col-3 border border-black py-4 rounded-t-lg'>Delete</h2>
-                        <h2 className='col-3 border border-black py-4 rounded-t-lg'>Name</h2>
-                    </div>
+                <div className='row fw-bold grid grid-cols-4'>
+                    <h2 className='col-3 border border-black py-4 rounded-t-lg'>Photo</h2>
+                    <h2 className='col-3 border border-black py-4 rounded-t-lg'>Quantity</h2>
+                    <h2 className='col-3 border border-black py-4 rounded-t-lg'>Delete</h2>
+                    <h2 className='col-3 border border-black py-4 rounded-t-lg'>Name</h2>
+                </div>
                 {
                     Products?.map(Product =>
                         <div key={Product._id} className='bg-green-700 w-96'>

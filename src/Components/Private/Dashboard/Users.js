@@ -4,7 +4,7 @@ import UserTable from './UserTable';
 const Users = () => {
     const [user, setUser] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/users', {
+        fetch('https://bike-hunt.herokuapp.com/users', {
             method: 'GET',
             headers: {
                 'content-type': 'application/json'
